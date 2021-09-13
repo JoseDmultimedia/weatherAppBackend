@@ -23,7 +23,7 @@ let weatherController ={
         res.json("Ok");
     },
     last: async(req, res) =>{
-        let lastWeather = await weatherModel.find().sort({_id:-1}).limit(1);
+        let lastWeather = await weatherModel.findOne().sort({_id:-1}).limit(1);
         res.json(lastWeather);
     }
 }

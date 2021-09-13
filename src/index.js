@@ -9,7 +9,7 @@ const mongoose = require('mongoose');
 
 //db connection 
 
-mongoose.connect('mongodb://localhost/weather')
+mongoose.connect('mongodb://localhost/clima')
 .then(db => console.log("db conectada"))
 .catch(error => console.log(error));
 
